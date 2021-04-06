@@ -1,0 +1,55 @@
+
+body {
+  background: #9a6366;
+  display: flex;
+  justify-content: center;
+}
+
+.traits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.traits .trait {
+  width: 23px;
+  border-radius: 50px;
+  height: 50px;
+  background: white;
+  margin: 1.5px;
+  animation: 1s heightAnimation infinite;
+}
+
+.traits .trait:nth-child(1),
+.traits .trait:nth-child(9) {
+  animation: 1s heightAnimation infinite 0.4s;
+}
+
+.traits .trait:nth-child(2),
+.traits .trait:nth-child(8) {
+  animation: 1s heightAnimation infinite 0.3s;
+}
+
+.traits .trait:nth-child(3),
+.traits .trait:nth-child(7) {
+  animation: 1s heightAnimation infinite 0.2s;
+}
+
+.traits .trait:nth-child(4),
+.traits .trait:nth-child(6) {
+  animation: 1s heightAnimation infinite 0.1s;
+}
+
+@keyframes heightAnimation {
+  from {
+    height: 5px;
+  }
+  50% {
+    height: 50px;
+  }
+  to {
+    height: 5px;
+  }
+}
+
